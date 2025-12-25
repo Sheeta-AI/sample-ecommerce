@@ -1,0 +1,11 @@
+columnName,dataType,isNullable,columnDefault,isPrimaryKey
+invoice_no,character varying,NO,,No
+stock_code,character varying,NO,,No
+description,text,YES,,No
+quantity,integer,YES,,No
+invoice_date,timestamp without time zone,NO,,No
+unit_price,numeric,NO,,No
+customer_id,integer,YES,,No
+country,character varying,NO,,No
+created_at,timestamp without time zone,YES,CURRENT_TIMESTAMP,No
+updated_at,timestamp without time zone,YES,CURRENT_TIMESTAMP,No

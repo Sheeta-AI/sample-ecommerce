@@ -1,0 +1,69 @@
+{
+  "columns": {
+    "id": {
+      "columnName": "id",
+      "aiVisibility": "visible"
+    },
+    "stock_code": {
+      "columnName": "stock_code",
+      "aiVisibility": "visible"
+    },
+    "description": {
+      "columnName": "description",
+      "aiVisibility": "visible"
+    },
+    "unit_price": {
+      "columnName": "unit_price",
+      "aiVisibility": "visible"
+    },
+    "category": {
+      "columnName": "category",
+      "aiVisibility": "visible"
+    },
+    "brand": {
+      "columnName": "brand",
+      "aiVisibility": "visible"
+    },
+    "weight": {
+      "columnName": "weight",
+      "aiVisibility": "visible"
+    },
+    "dimensions": {
+      "columnName": "dimensions",
+      "aiVisibility": "visible"
+    },
+    "color": {
+      "columnName": "color",
+      "aiVisibility": "visible"
+    },
+    "material": {
+      "columnName": "material",
+      "aiVisibility": "visible"
+    },
+    "is_active": {
+      "columnName": "is_active",
+      "aiVisibility": "visible"
+    },
+    "stock_quantity": {
+      "columnName": "stock_quantity",
+      "aiVisibility": "visible"
+    },
+    "reorder_level": {
+      "columnName": "reorder_level",
+      "aiVisibility": "visible"
+    },
+    "supplier_id": {
+      "columnName": "supplier_id",
+      "aiVisibility": "visible"
+    },
+    "created_at": {
+      "columnName": "created_at",
+      "aiVisibility": "visible"
+    },
+    "updated_at": {
+      "columnName": "updated_at",
+      "aiVisibility": "visible"
+    }
+  },
+  "aiVisibility": ""
+}

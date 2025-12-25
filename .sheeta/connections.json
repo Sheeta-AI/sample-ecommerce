@@ -1,0 +1,34 @@
+{
+  "connections": [
+    {
+      "id": "9d617f6e-75a5-458f-b9f9-4a1bf8aa9e0d",
+      "name": "emerce-uat",
+      "host": "localhost",
+      "port": 5432,
+      "database": "emerce-uat",
+      "username": "${DB_USERNAME_EMERCE_UAT}",
+      "password": "${DB_PASSWORD_EMERCE_UAT}",
+      "type": "postgres"
+    },
+    {
+      "id": "d7c347fa-ab4d-4c38-9418-cfbe0b981d74",
+      "name": "emerce-prd",
+      "host": "localhost",
+      "port": 5432,
+      "database": "emerce-prd",
+      "username": "${DB_USERNAME_EMERCE_PRD}",
+      "password": "${DB_PASSWORD_EMERCE_PRD}",
+      "type": "postgres"
+    },
+    {
+      "id": "f1e23187-fc95-496d-828b-1ceab5c57cf3",
+      "name": "emerce-sit",
+      "host": "localhost",
+      "port": 5432,
+      "database": "emerce-sit",
+      "username": "${DB_USERNAME_EMERCE_SIT}",
+      "password": "${DB_PASSWORD_EMERCE_SIT}",
+      "type": "postgres"
+    }
+  ]
+}

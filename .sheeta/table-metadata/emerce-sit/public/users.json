@@ -1,0 +1,53 @@
+{
+  "columns": {
+    "id": {
+      "columnName": "id",
+      "aiVisibility": "hidden"
+    },
+    "customer_id": {
+      "columnName": "customer_id",
+      "aiVisibility": "visible"
+    },
+    "first_name": {
+      "columnName": "first_name",
+      "aiVisibility": "hidden"
+    },
+    "last_name": {
+      "columnName": "last_name",
+      "aiVisibility": "hidden"
+    },
+    "email": {
+      "columnName": "email",
+      "aiVisibility": "hidden"
+    },
+    "phone": {
+      "columnName": "phone",
+      "aiVisibility": "hidden"
+    },
+    "country": {
+      "columnName": "country",
+      "aiVisibility": "hidden"
+    },
+    "address": {
+      "columnName": "address",
+      "aiVisibility": "hidden"
+    },
+    "city": {
+      "columnName": "city",
+      "aiVisibility": "visible"
+    },
+    "postal_code": {
+      "columnName": "postal_code",
+      "aiVisibility": "hidden"
+    },
+    "created_at": {
+      "columnName": "created_at",
+      "aiVisibility": "visible"
+    },
+    "updated_at": {
+      "columnName": "updated_at",
+      "aiVisibility": "hidden"
+    }
+  },
+  "aiVisibility": ""
+}
