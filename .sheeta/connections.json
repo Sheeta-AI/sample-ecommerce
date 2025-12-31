@@ -1,22 +1,22 @@
 {
   "connections": [
     {
-      "id": "81ddc177-57ae-4d7a-a068-29f84439c3c5",
-      "name": "Production",
-      "host": "localhost",
-      "port": 5432,
-      "database": "sample-ecommerce-prd",
-      "username": "${DB_USERNAME_PRODUCTION}",
-      "password": "",
-      "type": "postgres"
-    },
-    {
       "id": "838def4f-79f2-40fc-91dd-5021900516f4",
       "name": "Development",
       "host": "localhost",
       "port": 5432,
       "database": "sample-ecommerce",
       "username": "${DB_USERNAME_DEVELOPMENT}",
+      "password": "",
+      "type": "postgres"
+    },
+    {
+      "id": "81ddc177-57ae-4d7a-a068-29f84439c3c5",
+      "name": "Production",
+      "host": "localhost",
+      "port": 5432,
+      "database": "sample-ecommerce-prd",
+      "username": "${DB_USERNAME_PRODUCTION}",
       "password": "",
       "type": "postgres"
     }
