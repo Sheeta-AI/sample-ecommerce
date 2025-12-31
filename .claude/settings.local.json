@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(PGPASSWORD=mysecretpassword psql:*)"
-    ],
-    "deny": [],
-    "ask": []
-  }
-}

@@ -1,33 +1,23 @@
 {
   "connections": [
     {
-      "id": "9d617f6e-75a5-458f-b9f9-4a1bf8aa9e0d",
-      "name": "emerce-uat",
+      "id": "81ddc177-57ae-4d7a-a068-29f84439c3c5",
+      "name": "Production",
       "host": "localhost",
       "port": 5432,
-      "database": "emerce-uat",
-      "username": "${DB_USERNAME_EMERCE_UAT}",
-      "password": "${DB_PASSWORD_EMERCE_UAT}",
+      "database": "sample-ecommerce-prd",
+      "username": "${DB_USERNAME_PRODUCTION}",
+      "password": "",
       "type": "postgres"
     },
     {
-      "id": "d7c347fa-ab4d-4c38-9418-cfbe0b981d74",
-      "name": "emerce-prd",
+      "id": "838def4f-79f2-40fc-91dd-5021900516f4",
+      "name": "Development",
       "host": "localhost",
       "port": 5432,
-      "database": "emerce-prd",
-      "username": "${DB_USERNAME_EMERCE_PRD}",
-      "password": "${DB_PASSWORD_EMERCE_PRD}",
-      "type": "postgres"
-    },
-    {
-      "id": "f1e23187-fc95-496d-828b-1ceab5c57cf3",
-      "name": "emerce-sit",
-      "host": "localhost",
-      "port": 5432,
-      "database": "emerce-sit",
-      "username": "${DB_USERNAME_EMERCE_SIT}",
-      "password": "${DB_PASSWORD_EMERCE_SIT}",
+      "database": "sample-ecommerce",
+      "username": "${DB_USERNAME_DEVELOPMENT}",
+      "password": "",
       "type": "postgres"
     }
   ]
