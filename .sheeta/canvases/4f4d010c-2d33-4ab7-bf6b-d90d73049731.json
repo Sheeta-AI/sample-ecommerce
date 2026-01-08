@@ -1,0 +1,179 @@
+{
+  "id": "4f4d010c-2d33-4ab7-bf6b-d90d73049731",
+  "name": "Revenue",
+  "variables": [
+    {
+      "name": "start_date",
+      "values": [],
+      "valueType": "date",
+      "id": "a26d3ed2-96da-4745-9c8e-0fa00897d381",
+      "selectedValue": "2020-01-01"
+    },
+    {
+      "name": "end_date",
+      "values": [],
+      "valueType": "date",
+      "id": "683e7475-823b-4c35-843c-5bf7177dc516",
+      "selectedValue": "2026-01-08"
+    }
+  ],
+  "components": [
+    {
+      "id": "f156738b-bf6d-4674-a71f-c2be421108cd",
+      "type": "variable",
+      "layout": {
+        "i": "f156738b-bf6d-4674-a71f-c2be421108cd",
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "variableId": "a26d3ed2-96da-4745-9c8e-0fa00897d381",
+        "label": "Start Date",
+        "widgetType": "calendar"
+      }
+    },
+    {
+      "id": "8ade466a-c94e-401c-8819-87b2989270c8",
+      "type": "variable",
+      "layout": {
+        "i": "8ade466a-c94e-401c-8819-87b2989270c8",
+        "x": 0,
+        "y": 2,
+        "w": 4,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "variableId": "683e7475-823b-4c35-843c-5bf7177dc516",
+        "label": "End Date",
+        "widgetType": "calendar"
+      }
+    },
+    {
+      "id": "d794267e-ce16-4c56-bdf1-945c63214c3d",
+      "type": "bar-chart",
+      "layout": {
+        "i": "d794267e-ce16-4c56-bdf1-945c63214c3d",
+        "x": 0,
+        "y": 14,
+        "w": 4,
+        "h": 5,
+        "minW": 2,
+        "minH": 3,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
+        "table": "purchases",
+        "schema": "public",
+        "xAxis": "purchase_date",
+        "yAxis": "total_purchase_amount",
+        "categoryColumn": "purchase_date",
+        "valueColumn": "total_purchase_amount",
+        "title": "Daily Revenue",
+        "filters": [
+          {
+            "column": "purchase_date",
+            "operator": ">=",
+            "value": "$var:a26d3ed2-96da-4745-9c8e-0fa00897d381",
+            "columnDataType": "timestamp without time zone"
+          },
+          {
+            "column": "purchase_date",
+            "operator": "<=",
+            "value": "$var:683e7475-823b-4c35-843c-5bf7177dc516",
+            "columnDataType": "timestamp without time zone"
+          }
+        ]
+      }
+    },
+    {
+      "id": "346d533b-87f3-44a7-8d03-38a4fed13732",
+      "type": "pie-chart",
+      "layout": {
+        "i": "346d533b-87f3-44a7-8d03-38a4fed13732",
+        "x": 0,
+        "y": 4,
+        "w": 4,
+        "h": 5,
+        "minW": 2,
+        "minH": 3,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
+        "table": "purchases",
+        "schema": "public",
+        "xAxis": "product_category",
+        "yAxis": "total_purchase_amount",
+        "categoryColumn": "product_category",
+        "valueColumn": "total_purchase_amount",
+        "title": "Sales by product category",
+        "filters": [
+          {
+            "column": "purchase_date",
+            "operator": ">=",
+            "value": "$var:a26d3ed2-96da-4745-9c8e-0fa00897d381",
+            "columnDataType": "timestamp without time zone"
+          },
+          {
+            "column": "purchase_date",
+            "operator": "<=",
+            "value": "$var:683e7475-823b-4c35-843c-5bf7177dc516",
+            "columnDataType": "timestamp without time zone"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6d51ba03-53fd-483a-8da2-a6c9cdca4861",
+      "type": "pie-chart",
+      "layout": {
+        "i": "6d51ba03-53fd-483a-8da2-a6c9cdca4861",
+        "x": 0,
+        "y": 9,
+        "w": 4,
+        "h": 5,
+        "minW": 2,
+        "minH": 3,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
+        "table": "purchases",
+        "schema": "public",
+        "xAxis": "payment_method",
+        "yAxis": "total_purchase_amount",
+        "categoryColumn": "payment_method",
+        "valueColumn": "total_purchase_amount",
+        "title": "Sales by payment method",
+        "filters": [
+          {
+            "column": "purchase_date",
+            "operator": ">=",
+            "value": "$var:a26d3ed2-96da-4745-9c8e-0fa00897d381",
+            "columnDataType": "timestamp without time zone"
+          },
+          {
+            "column": "purchase_date",
+            "operator": "<=",
+            "value": "$var:683e7475-823b-4c35-843c-5bf7177dc516",
+            "columnDataType": "timestamp without time zone"
+          }
+        ]
+      }
+    }
+  ]
+}
