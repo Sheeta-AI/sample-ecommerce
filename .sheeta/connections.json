@@ -6,18 +6,18 @@
       "host": "localhost",
       "port": 5432,
       "database": "sample-ecommerce",
-      "username": "${DB_USERNAME_DEVELOPMENT}",
+      "username": "",
       "password": "",
       "type": "postgres"
     },
     {
-      "id": "81ddc177-57ae-4d7a-a068-29f84439c3c5",
+      "id": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
       "name": "Production",
-      "host": "localhost",
+      "host": "ep-withered-wildflower-a1ywwsjw-pooler.ap-southeast-1.aws.neon.tech",
       "port": 5432,
-      "database": "sample-ecommerce-prd",
+      "database": "neondb",
       "username": "${DB_USERNAME_PRODUCTION}",
-      "password": "",
+      "password": "${DB_PASSWORD_PRODUCTION}",
       "type": "postgres"
     }
   ]

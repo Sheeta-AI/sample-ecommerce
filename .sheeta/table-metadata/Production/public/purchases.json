@@ -1,0 +1,36 @@
+{
+  "columns": {
+    "purchase_date": {
+      "columnName": "purchase_date",
+      "aiVisibility": "visible"
+    },
+    "product_category": {
+      "columnName": "product_category",
+      "aiVisibility": "visible"
+    },
+    "product_price": {
+      "columnName": "product_price",
+      "aiVisibility": "visible"
+    },
+    "quantity": {
+      "columnName": "quantity",
+      "aiVisibility": "visible"
+    },
+    "total_purchase_amount": {
+      "columnName": "total_purchase_amount",
+      "aiVisibility": "visible"
+    },
+    "payment_method": {
+      "columnName": "payment_method",
+      "aiVisibility": "visible"
+    },
+    "returns": {
+      "columnName": "returns",
+      "aiVisibility": "visible"
+    },
+    "churn": {
+      "columnName": "churn",
+      "aiVisibility": "visible"
+    }
+  }
+}
