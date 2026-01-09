@@ -15,17 +15,29 @@
       "valueType": "date",
       "id": "683e7475-823b-4c35-843c-5bf7177dc516",
       "selectedValue": "2026-01-08"
+    },
+    {
+      "name": "start_date",
+      "values": [],
+      "valueType": "date",
+      "id": "135e375e-13d3-488b-aaa3-d7e966da3aff"
+    },
+    {
+      "name": "end_date",
+      "values": [],
+      "valueType": "date",
+      "id": "e71a3782-2655-4358-aaac-277f1fcd7b3c"
     }
   ],
   "components": [
     {
-      "id": "f156738b-bf6d-4674-a71f-c2be421108cd",
+      "id": "481ba2ee-1a89-4894-9574-18e0d2b267ec",
       "type": "variable",
       "layout": {
-        "i": "f156738b-bf6d-4674-a71f-c2be421108cd",
+        "i": "481ba2ee-1a89-4894-9574-18e0d2b267ec",
         "x": 0,
         "y": 0,
-        "w": 4,
+        "w": 5,
         "h": 2,
         "minW": 2,
         "minH": 2,
@@ -39,13 +51,13 @@
       }
     },
     {
-      "id": "8ade466a-c94e-401c-8819-87b2989270c8",
+      "id": "384fe048-2877-4eeb-9379-a0287e3dac67",
       "type": "variable",
       "layout": {
-        "i": "8ade466a-c94e-401c-8819-87b2989270c8",
+        "i": "384fe048-2877-4eeb-9379-a0287e3dac67",
         "x": 5,
         "y": 0,
-        "w": 4,
+        "w": 5,
         "h": 2,
         "minW": 2,
         "minH": 2,
@@ -59,49 +71,10 @@
       }
     },
     {
-      "id": "d794267e-ce16-4c56-bdf1-945c63214c3d",
-      "type": "bar-chart",
-      "layout": {
-        "i": "d794267e-ce16-4c56-bdf1-945c63214c3d",
-        "x": 0,
-        "y": 7,
-        "w": 9,
-        "h": 5,
-        "minW": 2,
-        "minH": 3,
-        "moved": false,
-        "static": false
-      },
-      "config": {
-        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
-        "table": "purchases",
-        "schema": "public",
-        "xAxis": "purchase_date",
-        "yAxis": "total_purchase_amount",
-        "categoryColumn": "purchase_date",
-        "valueColumn": "total_purchase_amount",
-        "title": "Daily Revenue",
-        "filters": [
-          {
-            "column": "purchase_date",
-            "operator": ">=",
-            "value": "$var:a26d3ed2-96da-4745-9c8e-0fa00897d381",
-            "columnDataType": "timestamp without time zone"
-          },
-          {
-            "column": "purchase_date",
-            "operator": "<=",
-            "value": "$var:683e7475-823b-4c35-843c-5bf7177dc516",
-            "columnDataType": "timestamp without time zone"
-          }
-        ]
-      }
-    },
-    {
-      "id": "346d533b-87f3-44a7-8d03-38a4fed13732",
+      "id": "13adab27-bd1d-46dd-abb0-5d3c33224c6b",
       "type": "pie-chart",
       "layout": {
-        "i": "346d533b-87f3-44a7-8d03-38a4fed13732",
+        "i": "13adab27-bd1d-46dd-abb0-5d3c33224c6b",
         "x": 0,
         "y": 2,
         "w": 5,
@@ -112,7 +85,8 @@
         "static": false
       },
       "config": {
-        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
+        "connectionName": "Production",
+        "useActiveConnection": false,
         "table": "purchases",
         "schema": "public",
         "xAxis": "product_category",
@@ -137,13 +111,13 @@
       }
     },
     {
-      "id": "6d51ba03-53fd-483a-8da2-a6c9cdca4861",
+      "id": "34c6f90d-4fff-4ad2-ac9b-3155c3d65561",
       "type": "pie-chart",
       "layout": {
-        "i": "6d51ba03-53fd-483a-8da2-a6c9cdca4861",
+        "i": "34c6f90d-4fff-4ad2-ac9b-3155c3d65561",
         "x": 5,
         "y": 2,
-        "w": 4,
+        "w": 5,
         "h": 5,
         "minW": 2,
         "minH": 3,
@@ -151,7 +125,8 @@
         "static": false
       },
       "config": {
-        "connectionId": "f8df2a53-bf4e-4bdc-af1a-0eab9b49fb74",
+        "connectionName": "Production",
+        "useActiveConnection": false,
         "table": "purchases",
         "schema": "public",
         "xAxis": "payment_method",
@@ -159,6 +134,46 @@
         "categoryColumn": "payment_method",
         "valueColumn": "total_purchase_amount",
         "title": "Sales by payment method",
+        "filters": [
+          {
+            "column": "purchase_date",
+            "operator": ">=",
+            "value": "$var:a26d3ed2-96da-4745-9c8e-0fa00897d381",
+            "columnDataType": "timestamp without time zone"
+          },
+          {
+            "column": "purchase_date",
+            "operator": "<=",
+            "value": "$var:683e7475-823b-4c35-843c-5bf7177dc516",
+            "columnDataType": "timestamp without time zone"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3869238f-e1a8-4ee6-86b9-ec87e89d129c",
+      "type": "bar-chart",
+      "layout": {
+        "i": "3869238f-e1a8-4ee6-86b9-ec87e89d129c",
+        "x": 0,
+        "y": 7,
+        "w": 10,
+        "h": 4,
+        "minW": 2,
+        "minH": 3,
+        "moved": false,
+        "static": false
+      },
+      "config": {
+        "connectionName": "Production",
+        "useActiveConnection": false,
+        "table": "purchases",
+        "schema": "public",
+        "xAxis": "purchase_date",
+        "yAxis": "total_purchase_amount",
+        "categoryColumn": "purchase_date",
+        "valueColumn": "total_purchase_amount",
+        "title": "Daily Revenue",
         "filters": [
           {
             "column": "purchase_date",
